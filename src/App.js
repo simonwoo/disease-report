@@ -31,7 +31,7 @@ class App extends Component {
     html2canvas(this.refs.pdf, {scale: 2}).then(canvas => {
       //返回图片dataURL，参数：图片格式和清晰度(0-1)
       let pageData = canvas.toDataURL('image/jpeg', 1.0);
-
+      
       let dims = {
         a2: [1190.55, 1683.78],
         a3: [841.89, 1190.55],
@@ -42,7 +42,7 @@ class App extends Component {
 
       let a4Width = dims['a4'][0];
       let a4Height = dims['a4'][1];
-      console.log(canvas)
+      
       let contentWidth = canvas.width,
         contentHeight = canvas.height;
       
