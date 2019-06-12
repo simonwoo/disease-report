@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>体检报告</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- DATA_INJECTION -->
+    <script>
+      window.globalData = {
+        "userBasicInfo": {
+            "address": "广州市天河区乔鑫汇悦台",
+            "birthday": "1965.06.05",
+            "bloodGroup": "O",
+            "company": "广州日报报业集团",
+            "compressFileAbsolutePath": "C:\\Users\\wangchao\\workspace\\report-generator-server\\upload-file\\201905\\20190530\\20190515161148004.zip",
+            "drinkFlag": false,
+            "examineDate": "2019.05.28",
+            "familyDiseaseHistory": "无",
+            "gender": "男",
+            "height": 175,
+            "name": "张三",
+            "occupation": "工人",
+            "phone": "123456789",
+            "rhesus": "+",
+            "smokeFlag": true,
+            "wechatNum": "123123",
+            "weight": 76
+        },
+        "recommendFood": [
+            {
+                "ind": "2776",
+                "name": "南瓜",
+                "value": 0.024
+            },
+            {
+                "ind": "2748",
+                "name": "薄叶菜",
+                "value": 0.027
+            },
+            {
+                "ind": "2788",
+                "name": "杏桃",
+                "value": 0.028
+            },
+            {
+                "ind": "2794",
+                "name": "香蕉",
+                "value": 0.031
+            },
+            {
+                "ind": "2779",
+                "name": "蒜头",
+                "value": 0.048
+            },
+            {
+                "ind": "2693",
+                "name": "鳟鱼",
+                "value": 0.051
+            },
+            {
+                "ind": "2812",
+                "name": "黑醋栗",
+                "value": 0.052
+            },
+            {
+                "ind": "2798",
+                "name": "葡萄柚",
+                "value": 0.071
+            },
+            {
+                "ind": "2878",
+                "name": "绿茶",
+                "value": 0.077
+            },
+            {
+                "ind": "2785",
+                "name": "绿豌豆",
+                "value": 0.078
+            },
+            {
+                "ind": "2820",
+                "name": "燕麦粥",
+                "value": 0.079
+            },
+            {
+                "ind": "2830",
+                "name": "燕麦",
+                "value": 0.081
+            },
+            {
+                "ind": "2818",
+                "name": "去壳荞麦",
+                "value": 0.084
+            },
+            {
+                "ind": "2860",
+                "name": "蜂蜜",
+                "value": 0.089
+            },
+            {
+                "ind": "2795",
+                "name": "蓝莓",
+                "value": 0.09
+            },
+            {
+                "ind": "2667",
+                "name": "小牛的肝脏",
+                "value": 0.091
+            },
+            {
+                "ind": "2691",
+                "name": "鲟鱼",
+                "value": 0.097
+            },
+            {
+                "ind": "2731",
+                "name": "优格",
+                "value": 0.102
+            },
+            {
+                "ind": "2786",
+                "name": "斑点菜豆",
+                "value": 0.11
+            },
+            {
+                "ind": "2712",
+                "name": "鲑鱼",
+                "value": 0.127
+            }
+        ],
+        "notRecommendFood": [
+            {
+                "ind": "2868",
+                "name": "伏特加",
+                "value": 6.367
+            },
+            {
+                "ind": "2879",
+                "name": "肥猪肉",
+                "value": 5.524
+            },
+            {
+                "ind": "2659",
+                "name": "猪肉",
+                "value": 5.023
+            },
+            {
+                "ind": "2875",
+                "name": "威士忌",
+                "value": 4.772
+            },
+            {
+                "ind": "2724",
+                "name": "冰淇淋",
+                "value": 4.763
+            },
+            {
+                "ind": "2671",
+                "name": "鸭肉",
+                "value": 4.745
+            },
+            {
+                "ind": "2753",
+                "name": "紫高丽菜",
+                "value": 4.048
+            },
+            {
+                "ind": "2863",
+                "name": "苹果醋",
+                "value": 4.008
+            },
+            {
+                "ind": "2672",
+                "name": "鹅肉",
+                "value": 3.794
+            },
+            {
+                "ind": "2730",
+                "name": "蜂窝奶酪　",
+                "value": 3.761
+            }
+        ],
+        "allergen": [
+            {
+                "ind": "2055",
+                "name": "丙烯酸酯",
+                "value": 0.516
+            },
+            {
+                "ind": "2086",
+                "name": "氧化锰",
+                "value": 0.525
+            },
+            {
+                "ind": "2090",
+                "name": "塑料(PS)",
+                "value": 0.537
+            },
+            {
+                "ind": "2003",
+                "name": "酮戌二酸",
+                "value": 0.55
+            },
+            {
+                "ind": "2105",
+                "name": "盘尼西林",
+                "value": 0.574
+            },
+            {
+                "ind": "2091",
+                "name": "聚脂纤维",
+                "value": 0.581
+            },
+            {
+                "ind": "2052",
+                "name": "山菠菜属",
+                "value": 0.596
+            },
+            {
+                "ind": "2049",
+                "name": "梯牧草",
+                "value": 0.626
+            },
+            {
+                "ind": "2080",
+                "name": "镉",
+                "value": 0.64
+            },
+            {
+                "ind": "1992",
+                "name": "胆红素",
+                "value": 0.643
+            },
+            {
+                "ind": "1981",
+                "name": "乙诜乙酸乙酯",
+                "value": 0.647
+            },
+            {
+                "ind": "2128",
+                "name": "麻黄",
+                "value": 0.649
+            },
+            {
+                "ind": "2065",
+                "name": "金属镓",
+                "value": 0.654
+            },
+            {
+                "ind": "2079",
+                "name": "鹤金梅",
+                "value": 0.657
+            },
+            {
+                "ind": "2076",
+                "name": "黑冷杉",
+                "value": 0.661
+            }
+        ]
+    }
+    </script>
+  </body>
+</html>

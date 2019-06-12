@@ -1,0 +1,53 @@
+// A4: 8.27*11.69inch，页边距0.75inch
+// width: 794px, height: 1090px
+.App {
+    text-align: center; 
+    background: rgb(236, 236, 236); 
+    font-size: 0px;
+    width: 960px;   
+    margin: 0 auto;
+}
+
+.top {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+    border-top: 1px solid #e8e8e8;
+    background: #e6e6e6;
+    z-index: 1;
+}
+
+.page {
+    display: inline-block;
+    width: 960px;
+    height: 1355px;
+    padding: 20px 40px;
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 2px;
+}
+
+.page1 {
+    .page;
+    font-family: "SimSun", "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.page2 {
+    .page;
+    font-weight: 400;
+    color: #000000;
+    font-family: "STKaiti", "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.explanation {
+    font-family: "SimSun", "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    position: absolute;
+    left: 0;
+    bottom: 10px; 
+    width: 100%;
+    font-size: 26px;
+    display: flex; 
+    flex-direction: column;
+}
